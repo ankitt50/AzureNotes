@@ -1,0 +1,42 @@
+*********************************Microsoft Azure Fundamentals: Describe cloud concepts***********************************************
+*************************************************************************************************************************************
+*************************************************************************************************************************************
+1) Cloud Computing 
+computing services over the internet, VMs, storage, DBs, networking, IoT, ML/AI
+helps in rapid expansion of IT footprint.
+
+2) Shared responsibility model
+traditional Datacenter --> comapny maintains everything
+shared responsibility model --> responsibility shared between cloud provider and consumer. Cloud provider --> datacenter security, power, cooling, 
+network connectivity (basically everything related to datacenter). Consumer --> data and info stored in the cloud and its access security.
+Sometimes the responsibility also depends on the situation. ex a) cloud SQL DB --> maintenance responsibility --> cloud provider
+b) VM --> SQL DB --> maintenance responsibility --> consumer
+The responsibility also depends on the service type ex: IaaS (Only physical hosts/networkdatacenter responsibility with cloud provider),
+PaaS (IaaS responsibilities + OS, applications, identity and directory infra related responsibilities given to cloud provider),
+SaaS (Info, data, devices, accounts/identities are only left with consumer)
+
+3) Cloud models
+a) Private cloud : used by single entity, much greater control but also great cost, can be even provided by a third party.
+b) public cloud : controlled,maintained by third party. 
+c) Hybrid cloud : both public and private cloud in an interconnected environment. ex: using public cloud when there is a temporary surge in demand.
+d) Multi cloud : using multiple public cloud providers.
+
+Azure Arc --> technologies to manage cloud environment (whether public cloud or private or hybrid or multi)
+Azure VMware solutions --> run VMware workloads in Azure with seamless integration and scalability.
+
+4) Consumption based model
+
+IT infra models, 2 types of expenses --> CapEx, OpEx
+CapEx --> one time, upfront, tangible resources
+OpEx --> overtime ex: cloud computing
+
+Cloud computing --> OpEx, consumption based model, no upfront cost, pay for more resources only when it's needed,stop paying as soon as they are not required,
+don't have to worry about correct/accurate estimation of the resources needed. Just add/remove resources as and when required.
+
+5) Cloud pricing model
+pay-as-you-go pricing model --> pay only for what you use (basically rent compute power/storage)
+Adv : operating cost management/planning, more efficient infra, dynamic scaling as per need
+
+
+
+
