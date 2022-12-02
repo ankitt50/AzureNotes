@@ -1,4 +1,4 @@
-*********************************Microsoft Azure Fundamentals: Describe cloud concepts***********************************************
+*********************************Microsoft Azure Fundamentals: cloud concepts***********************************************
 *************************************************************************************************************************************
 *************************************************************************************************************************************
 1) Cloud Computing 
@@ -36,6 +36,21 @@ don't have to worry about correct/accurate estimation of the resources needed. J
 5) Cloud pricing model
 pay-as-you-go pricing model --> pay only for what you use (basically rent compute power/storage)
 Adv : operating cost management/planning, more efficient infra, dynamic scaling as per need
+
+6) high availability 
+high availability focusses on maximum availability of the application/services/IT resources regardless of disruption/events
+For azure, these uptime guarantees depends on the service and are part of SLAs(service level aggreements).
+But high availability comes with a cost, so always optimise based on your needs. In Azure, every service has its own availability percentage.
+
+7) Scalability
+ability to adjust resources to meet demand. As Cloud computing uses consumption based model, you can reduce/increase your resources as 
+per demand and reduce the costs.
+Vertical scaling : increasing/decreasing capabilities of resources. ex: increasing (scale up)/decreasing (scale down) RAM of a VM
+horizontal scaling : adding / subtracting the number of resources. ex: adding new VMs (scaling out), reducing the number of VMs (scaling in)
+
+
+
+
 
 
 
