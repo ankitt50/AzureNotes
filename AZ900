@@ -123,6 +123,74 @@ Scenarios for SaaS :
 * Business productivity application
 * Finance and expense tracking
 
+*********************************Microsoft Azure Fundamentals: Azure architecture and services ***********************************************
+*************************************************************************************************************************************
+*************************************************************************************************************************************
+
+Azure? --> cloud services to build, manage and deploy applications on a global network
+Azure offering?
+--> continuos innovation from Microsoft
+--> open source, support for all languages/frameworks
+--> operate hybrid seamlessly (hybrid cloud solutions)
+--> security; compliance
+What can you do with Azure?
+--> do everything from running existing application on VM to exploring intelligent bots/mixed reality
+--> VMs are good start, but cloud/Azure is more than that! ex: you can use AI/Mlservices to naturally communicate with your users! Or you can use storage solutions
+    which can dynamically grow!
+
+
+1) Azure Accounts
+
+Azure account --> Azure subscription --> Azure resource groups --> Azure resources/services
+
+check this image : https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/account-scope-levels-9ceb3abd.png
+
+Azure account --> Billing accounts --> Billing profiles --> Invoice sections
+
+Azure Free account --> free access to popular azure products for 12 months; credit to use for the first 30 days; access to products that are always free.
+Azure free student account --> free access to certain azure products for 12 months; credit to use for the first 12 months; access to dev tools.
+Microsoft Learn sandbox --> temporary subscriptions added to your azure account which can be used during learn module. These are automatically cleaned up after 
+                            the module is completed.
+
+2) Azure physical infrastructure
+
+Core Architectural components of Azure --> 2 main groupings --> physical infrastructure and management infrastructure
+
+Physical Infrastructure
+DataCenters (kinda same as large corporate datacenters) --> Azure has datacenters around the world.
+These datacenters aren't directly accessible. These are grouped into Azure Regions/Azure Availability Zones.
+
+3) Regions
+geographical area that contains one or more datacenters. These datacenters (if more than one), are networked together with low-latency.
+
+** Azure Active Directory, Azure traffic manager, Azure DNS don't require you to select a particular region.
+
+4) Availability Zones
+These are physically separated datacenters within an Azure region. These datacenters are equipped with independent power, cooling, and networking.
+So, availability zone is setup to be an isolation boundary (so if one fails, other can keep working). These availibility zones are connected through high-speed,
+private fiber-optic networks.
+
+** A minimum of 3 separate availability zones are present in availability zone - enabled region.
+
+Availability zones categories:
+Zonal services --> you pin the resource to a specific zone (ex: VMs, managed disks, IP addresses)
+Zone-redundant services --> platform replicated automatically across zones (ex: zone redundant storage, SQL DBs)
+Non-regional services --> services are always available from Azure geographies (resilient to zone-wise/region-wide outages)
+
+** Azure has region pairs to provide further resilience.
+
+5) Region pairs
+most azure regions are paired with another region within same geography to reduce interruptions in case of region wide outages.
+But not all azure services automatically replicate data or fall back from failed region to cross-replicate to another enabled region.
+
+
+
+
+
+
+
+
+
 
 
 
