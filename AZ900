@@ -48,6 +48,45 @@ per demand and reduce the costs.
 Vertical scaling : increasing/decreasing capabilities of resources. ex: increasing (scale up)/decreasing (scale down) RAM of a VM
 horizontal scaling : adding / subtracting the number of resources. ex: adding new VMs (scaling out), reducing the number of VMs (scaling in)
 
+8) Reliability
+ability of the system to recover from failures and continue to function.
+cloud --> decentralized design (resources deployed in regions around the world) --> reliable/resilient infra.
+
+9) Predictability
+performance predictability and cost predictablity
+performance predictability : predicting resources needed; Autoscaling (both scale up or scale down), load balancing (if traffic is heavily focussed on one area,
+it helps in redirecting the overload), high availability etc.
+cost predictability : forecasting cost of cloud spent. track your resources in real time, monitor resources for effcient usage, apply data analytics for 
+better planning of resource deployment. cloud analytics also help in predicting future costs and reqiured resources. other tools : total cost of ownership
+or pricing calculator.
+
+10) Governance and compliance
+set templates --> ensure coorporate standards and government regulations (also update the standards as and when required). 
+cloud based auditing --> identify out of compliance resources, provide migration strategies
+
+11) Security
+maximum control over security --> IaaS
+If want automatic software patches  and maintenance use SaaS
+establish your good governance footprints early to keep cloud footprint updated/secure/well managed.
+
+12) Manageability
+
+### Management of the Cloud ####
+--> automatic scaling
+--> preconfigured templates for resource deployment
+--> monitor resource health; automatic replacement of failing resources
+--> automatic alerts based on configuration (real time performance monitoring)
+
+*** Management in the cloud ****
+--> through web portal
+--> CLI
+--> APIs
+--> powershell
+
+
+
+
+
 
 
 
