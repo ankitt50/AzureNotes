@@ -83,6 +83,59 @@ establish your good governance footprints early to keep cloud footprint updated/
 --> APIs
 --> powershell
 
+13) Infrastructure as a Service (IaaS)
+---> most flexible, most control over cloud resources
+--> cloud provider : harware maintenance, network connnectivity, physical security
+--> you are responsible for : OS installation, configuration, maintenance; network configuration; DB/storage configurations, patching and updates, security, etc.
+
+## Shared Responsibility Model : applies to all cloud service types.
+IaaS : largest share of responsibility with you.
+check this image on Shared responsibility model :
+https://learn.microsoft.com/en-us/training/wwl-azure/describe-cloud-service-types/media/shared-responsibility-b3829bfe.svg
+Scenarios for IaaS :
+* Lift and shift migration : simply moving things running on-prem to on IaaS infra
+* Testing and development : You have established config. for development/ test environments that you need to replicate rapidly. standup or shut down various 
+environments repidly while maintaining complete control.
+
+14) Platform as a Service (PaaS)
+--> middle ground between renting space in datacenter (IaaS) and paying for complete deployed solutions (SaaS).
+--> cloud provider : harware maintenance, network connnectivity, physical security, OS, middleware, development tools, Business intelligence services,
+                     patching and licensing of OS/DBs
+PaaS : well suited to provide complete development environment.
+## Shared Responsibility Model :
+PaaS : harware maintenance, network connnectivity, physical security, OS, DBs, development tools.
+For networking, connectivity settings, security, directory infra :  responsibility depends on the configurations.
+Scenarios for PaaS :
+* Development framework : PaaS lets developer create applications using built-in software components. 
+* Analytics or business intelligence
+
+15) Software as a Service (SaaS)
+--> most complete cloud service model
+--> essentially renting fully developed applications. ex: email, financial software, messaging application, etc.
+--> least flexible, but easiest to get up and running
+--> requires least tech skills
+
+## Shared Responsibility Model 
+SaaS : most reponsibility on cloud provider
+you are responsible for : data , devices allowed to connect to the system, users that have the access
+Scenarios for SaaS :
+* Email/Messaging
+* Business productivity application
+* Finance and expense tracking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
