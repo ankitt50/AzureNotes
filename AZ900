@@ -183,6 +183,51 @@ Non-regional services --> services are always available from Azure geographies (
 most azure regions are paired with another region within same geography to reduce interruptions in case of region wide outages.
 But not all azure services automatically replicate data or fall back from failed region to cross-replicate to another enabled region.
 
+Advantages of Azure : 
+--> in outages, atleast one of the regions is prioritized for restoration.
+--> updates are rolled out one region at a time to minimize downtime.
+--> data continues to reside within same geography (tax, law jurisdiction purposes)
+
+pairing can be both in two directions (both regions provide backups for each other), (or) can be in one direction.
+
+6) Sovereign regions
+These instances are isolated from main instances of Azure. These may be required for compliance or legal purposes.
+ex: US DoD Central, US Gov Virginia, US Gov Iowa, etc : physical and logical network isolated instances
+    China East, China North, etc
+    
+7) Azure resource and resource groups
+resources are basic building blocks. ex : VMs, DBs, etc.
+resource groups are simply groupings of resources. Every resource is placed into a resource group. Resource can be associated with only one resource group at
+a time. The resource group of any resource can be changes later as well. resource group can't be nested.
+Any action (ex : delete, access grant/deny) done on resource group apply to all resources within it.
+
+8) Azure subscriptions
+subscriptions are unit of management, billling, and scale. It provides authenticated and authorized access to azure products and services.
+An account can have multiple subscriptions, but only one is mandatory. 
+
+Azure subscription boundaries :
+--> Billing boundary : how an Azure account is billed? separate billing reports and invoices are generated for each subscription.
+--> Access control boundary : access mgmt policies at subscription level. 
+
+Additional azure subscriptions can be used to separate different environments, reflect organizational structures, manage billing/track costs
+
+9) Azure management groups
+If you have multiple subscriptions, you can organize subscriptions into containers (management groups) and apply governance conditions. All subscriptions 
+automatically inherit conditions applied to management group.
+Management groups give enterprise-grade management at a large scale. 
+Management groups can be nested.
+check this image : https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png
+
+Management groups use cases :
+--> create hierarchy that applies a policy : VM locations, security policy.
+--> provide user access to multiple subscriptions : moving multiple subscriptions under a mgmt group, and create one Azure role-based access control (Azure RBAC)
+assignment on the mgmt group.
+
+** 10000 mgmt groups can be supported in a single directory.
+** upto 6 levels of depth can be supported in management group tree
+** each management group and subscription can support only one parent.
+
+
 
 
 
