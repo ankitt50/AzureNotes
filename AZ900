@@ -227,6 +227,14 @@ assignment on the mgmt group.
 ** upto 6 levels of depth can be supported in management group tree
 ** each management group and subscription can support only one parent.
 
+10) Azure Virtual Machines
+VMs provide IaaS in form of virtualized server. Can customize software running on VMs. 
+VMs are ideal when you need complete control over the OS, run custom softwares, use custom hosting configurations.
+Since it is IaaS, you still need to configure, update, and maintain the softwares.
+For rapid creation of VM, you can use preconfigured VM image. An image is a template used to create a VM and may already include OS and other softwares.
+
+
+
 
 
 
